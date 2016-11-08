@@ -4,7 +4,7 @@
 ##2016-11-08 23:36
 > 第一次创建，记录浏览和学习到的有用的片段代码 
 
- - MarkDown 超链接新窗口跳转：
+ - MarkDown 超链接新窗口跳转(网页支持的写法，不一定有用，csdn可以，github不行)：
  
  ```java
  <a href="http://write.blog.csdn.net/postlist" target="_blank">跳到自己博客列表</a>
