@@ -1,7 +1,6 @@
 # android-learning-tips
-记录浏览和学习到的有用的片段代码  **2016-11-08 23:36**
+> 记录浏览和学习到的有用的片段代码  **（2016-11-08 23:36）**
 
---
 
  - MarkDown 超链接新窗口跳转(网页支持的写法，不一定有用，csdn可以，github不行)：
  
@@ -16,6 +15,7 @@
  ```
  
  
- **点击[这里]()查看部分原文**
+
+**点击[这里](https://github.com/youlookwhat/android-learning-tips/blob/master/PartSource.md)查看部分原文**
  
 
