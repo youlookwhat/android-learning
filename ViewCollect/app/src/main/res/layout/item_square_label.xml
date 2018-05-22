@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_popUp_chooseCase"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="20dp"
+    android:minHeight="40dp">
+
+    <TextView
+        android:id="@+id/txt_item_popUp_chooseCase"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/selector_item_text"
+        android:text="全部全部"
+        android:textColor="@color/selector_item_txt_multi_choice_new_ill_note_text"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txt_item_popUp_chooseCase"
+        android:src="@drawable/v3_shanchu"
+        android:visibility="gone" />
+
+</RelativeLayout>

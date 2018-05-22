@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NumberAddView">
+        <attr name="addOrSub_width" format="dimension" />
+        <attr name="number_width" format="dimension" />
+        <attr name="number_editable" format="boolean" />
+    </declare-styleable>
+
+    <!--展开收缩动画属性-->
+    <declare-styleable name="ExpandableView">
+        <attr name="ev_isCollapsed" format="boolean" />
+        <attr name="ev_collapseOnContentClick" format="boolean" />
+        <attr name="ev_animationDuration" format="integer" />
+        <attr name="ev_headerLayout" format="reference" />
+        <attr name="ev_contentLayout" format="reference" />
+        <attr name="ev_footerLayout" format="reference" />
+        <attr name="ev_disableExpandCollapseOnClick" format="boolean" />
+        <attr name="ev_addOverlayWhenCollapsed" format="boolean" />
+        <attr name="ev_gradientOverlayColor" format="color|reference" />
+        <attr name="ev_customContentOverlay" format="reference" />
+        <attr name="ev_collapsedContentHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

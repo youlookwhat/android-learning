@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.example.jingbin.viewcollect.MainActivity"
+            tools:showIn="@layout/app_bar_main">
+
+            <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+            <TextView
+                android:id="@+id/tv_product_detail"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="仿天猫商品详情"
+                app:theme="@style/AppTheme" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e0e0e0" />
+
+            <TextView
+                android:id="@+id/tv_add_num"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="加减商品数量"
+                app:theme="@style/AppTheme" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e0e0e0" />
+
+            <TextView
+                android:id="@+id/tv_player"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="exoPlayer播放视频"
+                app:theme="@style/AppTheme" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e0e0e0" />
+
+            <TextView
+                android:id="@+id/tv_tag"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="自动换行标签"
+                app:theme="@style/AppTheme" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e0e0e0" />
+
+            <TextView
+                android:id="@+id/tv_expand"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="点击展开收起布局"
+                app:theme="@style/AppTheme" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e0e0e0" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="倒计时控件"
+                app:theme="@style/AppTheme" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e0e0e0" />
+
+            <TextView
+                android:id="@+id/tv_lab"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="可拖动的RecyclerView"
+                app:theme="@style/AppTheme" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e0e0e0" />
+
+            <TextView
+                android:id="@+id/tv_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="Flipper滚动条"
+                app:theme="@style/AppTheme" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e0e0e0" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

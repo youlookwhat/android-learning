@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jingbin.viewcollect">
+
+    <!-- 用於屏幕自適應 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.ProductDetailActivity" />
+        <activity android:name=".ui.NumberAddViewActivity" />
+        <activity
+            android:name="com.kaws.lib.exoplayer.PlayerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:launchMode="singleTop"
+            android:theme="@style/PlayerTheme" />
+        <activity android:name=".ui.WordWrapViewActivity" />
+        <activity android:name=".ui.ExpandableViewActivity" />
+        <activity android:name=".ui.CountTimeViewActivity" />
+        <activity
+            android:name=".ui.LabelEditActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.FlipperActivity"></activity>
+    </application>
+
+</manifest>

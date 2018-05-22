@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_number"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/tv_sub"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:drawablePadding="0dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/ic_mall_sub"
+        android:textColor="@color/tip_txt" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/tip_txt" />
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="numberSigned"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/tip_txt" />
+
+    <ImageView
+        android:id="@+id/tv_add"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/ic_mall_add" />
+</LinearLayout>

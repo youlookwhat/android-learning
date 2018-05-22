@@ -1,0 +1,8 @@
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:fillAfter="true"
+    android:propertyName='translationY'
+    android:valueFrom='44dp'
+    android:valueTo='0dp'
+    android:valueType='floatType' />

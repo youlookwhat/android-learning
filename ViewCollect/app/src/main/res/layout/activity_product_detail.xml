@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.example.jingbin.viewcollect.slideview.SlidingMenu
+        android:id="@+id/expanded_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/ysv_page_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--        详情tab上部分      -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:background="@color/bg_margin"
+                        android:gravity="center"
+                        android:lineSpacingExtra="9dp"
+                        android:text="在此可显示商品图片和优惠信息等\n下拉显示对应商品的图文详情" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_product_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_arrow_up" />
+
+                        <TextView
+                            android:id="@+id/tv_product_explain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="上拉查看图文详情"
+                            android:textColor="@color/tip_txt"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+            <com.example.jingbin.viewcollect.slideview.SlideWebView
+                android:id="@+id/ysnowswebview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </com.example.jingbin.viewcollect.slideview.SlidingMenu>
+
+</layout>

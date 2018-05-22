@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_expandable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.jingbin.viewcollect.ui.ExpandableViewActivity">
+
+        <com.example.jingbin.viewcollect.view.ExpandableView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expandable_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ev_addOverlayWhenCollapsed="true"
+            app:ev_animationDuration="300"
+            app:ev_collapsedContentHeight="0dp"
+            app:ev_contentLayout="@layout/program_content"
+            app:ev_footerLayout="@layout/layout_footer"
+            app:ev_headerLayout="@layout/program_head" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:keepScreenOn="true">
+
+    <com.google.android.exoplayer.AspectRatioFrameLayout
+        android:id="@+id/video_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <SurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <View
+            android:id="@+id/shutter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+
+        <com.google.android.exoplayer.text.SubtitleLayout
+            android:id="@+id/subtitles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.exoplayer.AspectRatioFrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/titlebar"
+        android:background="#BB000000"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_exoplayer_back"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1px"
+            android:background="#33FFFFFF"
+            android:layout_height="24dp"/>
+        <TextView
+            android:id="@+id/tv_tile"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:ellipsize="end"
+            android:text="我事标题"
+            android:textColor="#88FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>
