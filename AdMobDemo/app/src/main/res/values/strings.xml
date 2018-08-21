@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AdMob Banner Example</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- This is an ad unit ID for a test ad. Replace with your own banner ad unit id. -->
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <!--自己的Id-->
+    <string name="banner_ad_unit_id">ca-app-pub-9895194124287488/3509290749</string>
+
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/2934735716</string>-->
+
+</resources>
