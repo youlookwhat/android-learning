@@ -11,9 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:lottie_autoPlay="true"
-        app:lottie_fileName="LottieLogin2.json"
+        app:lottie_fileName="fish.json"
         app:lottie_loop="true" />
 
     <!--lottie_loop 循环播放-->
+    <!--android:scaleType="fitXY"-->
 
 </android.support.constraint.ConstraintLayout>
