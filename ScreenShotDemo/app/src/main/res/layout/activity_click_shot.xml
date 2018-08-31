@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#458EFD"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="保存"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/mScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dip"
+                    android:text="花淡淡，水悠悠，叶田田。那又是谁斑驳了这绝世的花颜，携一帘幽梦，
+            盈一袖轻云，掬一滴清泉，揽一缕清风，娴静优雅，柔情缱绻，尾随而来?莲花初开，微风徐来，沁心的荷香，
+            诗意了岁月，徜徉了人间，嗅着这若有若无的淡淡荷花香，一股通灵的感觉如游丝般慢慢的浸润了心扉，
+            躁动的心儿也仿佛跟着悄然安静了下来。
+“陌上欣欣青绿邈，岁岁年年，轮转无终了。”那又是谁蹙一弯峨眉，流转于潋滟碧波;嬉一袭水袖，惊鸿在风尘阙歌?逸动的涟漪，惑起的水滴，风动荷香，花开莲池。那又是谁羞答答的捧起那一宛粉，一宛白，以珠水空灵的韵味勾勒出那娓娓垂涎流香?风过，心头一抹芬芳，指尖一缕余香。是莲花开了吗?是莲花她处处开了吗? 那我为何只见花开，不见你来?
+少时，小雨随风而至。倾时，云水之巅，清风细雨，烟雾迷弥，翠玉轻翻，红粉留痕，氤氲的莲池瞬时漾起一行行醉人的音符。“蕊中千滴泪，心里万条丝。”滴滴细雨，悠悠情思，那淡淡风痕处，款款崖暖时，你可晓莲花她已处处开?氤氲烟雨中，毓秀淡雅刻，那你又可懂迷离了谁的清波凝眸?馨香的花瓣，百年的凝望，千年的等待，“荷花频频，杨柳依依”，
+“三生两会，两世相逢”。既然，山和水可以彼此相忘，星和月可以流光相皎。风华只是一指流沙，苍老只是一段年华。那么，心儿在您的世界，您的天空可真的有我?" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:padding="20dip"
+                     android:text="“陌上欣欣青绿邈，岁岁年年，轮转无终了。" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/image_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/jietu_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
