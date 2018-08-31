@@ -1,6 +1,9 @@
 # android-learning-tips
 
  - 简易的jni例子
+ - AdMob例子
+ - 截图加图片或文字水印例子
+ - Lottie例子
 
  - 控件集合
    - 加减商品数量
