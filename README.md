@@ -1,4 +1,4 @@
-# android-learning-tips
+# android-learning
 
  - 简易的jni例子
  - AdMob例子
