@@ -15,7 +15,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,6 +53,7 @@ public class ContactsFragment extends Fragment implements OnQuickSideBarTouchLis
 
     private HashMap<String, Integer> letters = new HashMap<>();
     private List<Contacts> contacts = new ArrayList<Contacts>();
+    private  LinearLayoutManager layoutManager;
     private CharacterParser characterParser;
 
     public static ContactsFragment newInstance() {
@@ -149,8 +149,7 @@ public class ContactsFragment extends Fragment implements OnQuickSideBarTouchLis
 
 
         //设置列表数据和浮动header
-        final LinearLayoutManager layoutManager = new
-                LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+         layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
 
         // Add the sticky headers decoration
@@ -205,7 +204,9 @@ public class ContactsFragment extends Fragment implements OnQuickSideBarTouchLis
         quickSideBarTipsView.setText(letter, position, y);
         //有此key则获取位置并滚动到该位置
         if (letters.containsKey(letter)) {
-            recyclerView.scrollToPosition(letters.get(letter));
+            // 往下滑会定位不到顶部
+//            recyclerView.scrollToPosition(letters.get(letter));
+            layoutManager.scrollToPositionWithOffset(letters.get(letter), 0);
         }
     }
 
