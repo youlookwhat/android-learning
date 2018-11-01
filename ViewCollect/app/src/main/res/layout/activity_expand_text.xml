@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jingbin.viewcollect.ui.ExpandTextActivity">
+
+    <com.example.jingbin.viewcollect.view.MyExpandableTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:myExpandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        myExpandableTextView:maxCollapsedLines="5">
+
+        <TextView
+            android:id="@+id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.4"
+            android:textColor="#4B494C"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="right|bottom"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:textColor="#ffce3d3a"
+                android:visibility="visible"
+                tools:text="展开" />
+
+            <ImageView
+                android:id="@+id/iv_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_expand"
+                android:layout_toRightOf="@+id/tv_expand"
+                tools:src="@drawable/icon_comment_arrow_up" />
+
+        </RelativeLayout>
+    </com.example.jingbin.viewcollect.view.MyExpandableTextView>
+
+
+</LinearLayout>

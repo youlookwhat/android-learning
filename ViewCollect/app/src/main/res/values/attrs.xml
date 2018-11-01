@@ -22,4 +22,17 @@
         <attr name="ev_collapsedContentHeight" format="dimension" />
     </declare-styleable>
 
+    <!--展开 收起-->
+    <declare-styleable name="MyExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="expandIndicator" format="reference"/>
+        <attr name="collapseIndicator" format="reference"/>
+        <attr name="expandToggleType" format="enum">
+            <enum name="ImageButton" value="0"/>
+            <enum name="TextView" value="1"/>
+        </attr>
+        <attr name="expandableTextId" format="reference"/>
+        <attr name="expandCollapseToggleId" format="reference"/>
+    </declare-styleable>
+
 </resources>

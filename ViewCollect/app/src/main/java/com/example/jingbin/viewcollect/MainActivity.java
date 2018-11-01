@@ -16,6 +16,7 @@ import android.view.View;
 
 import com.example.jingbin.viewcollect.databinding.ActivityMainBinding;
 import com.example.jingbin.viewcollect.ui.CountTimeViewActivity;
+import com.example.jingbin.viewcollect.ui.ExpandTextActivity;
 import com.example.jingbin.viewcollect.ui.ExpandableViewActivity;
 import com.example.jingbin.viewcollect.ui.FlipperActivity;
 import com.example.jingbin.viewcollect.ui.LabelEditActivity;
@@ -100,6 +101,7 @@ public class MainActivity extends AppCompatActivity
                 FlipperActivity.start(MainActivity.this);
                 break;
             case R.id.tv_expand_text: // 文字展开收起(列表适用)
+                ExpandTextActivity.start(MainActivity.this);
                 break;
             default:
                 break;
