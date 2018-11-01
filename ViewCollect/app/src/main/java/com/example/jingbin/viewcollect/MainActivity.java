@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity
         binding.include.inContentMain.tvTime.setOnClickListener(this);
         binding.include.inContentMain.tvLab.setOnClickListener(this);
         binding.include.inContentMain.tvFlipper.setOnClickListener(this);
+        binding.include.inContentMain.tvExpandText.setOnClickListener(this);
     }
 
     @Override
@@ -97,6 +98,8 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.tv_flipper: // Flipper滚动条
                 FlipperActivity.start(MainActivity.this);
+                break;
+            case R.id.tv_expand_text: // 文字展开收起(列表适用)
                 break;
             default:
                 break;

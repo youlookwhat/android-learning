@@ -129,6 +129,20 @@
                 android:layout_height="1px"
                 android:background="#e0e0e0" />
 
+            <TextView
+                android:id="@+id/tv_expand_text"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="文字展开收起(列表适用)"
+                app:theme="@style/AppTheme" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e0e0e0" />
+
         </LinearLayout>
     </ScrollView>
 </layout>
