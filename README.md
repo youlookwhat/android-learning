@@ -13,3 +13,4 @@
    - 倒计时控件
    - 可拖动的RecyclerView
    - Flipper滚动条
+   - 列表文本展开收起
