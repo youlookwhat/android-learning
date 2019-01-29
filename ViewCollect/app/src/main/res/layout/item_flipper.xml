@@ -3,7 +3,6 @@
     android:id="@+id/rl_item_popUp_chooseCase"
     android:layout_width="match_parent"
     android:layout_height="40dp"
-    android:layout_marginBottom="20dp"
     android:minHeight="40dp">
 
     <TextView

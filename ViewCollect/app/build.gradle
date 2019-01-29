@@ -36,4 +36,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'io.reactivex:rxandroid:1.2.0'
     compile 'com.android.support:multidex:1.0.3'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.41'
 }
