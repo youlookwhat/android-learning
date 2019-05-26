@@ -13,9 +13,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.jingbin.viewcollect.databinding.ActivityMainBinding;
 import com.example.jingbin.viewcollect.ui.CountTimeViewActivity;
+import com.example.jingbin.viewcollect.ui.CustomBehaviorActivity;
 import com.example.jingbin.viewcollect.ui.ExpandTextActivity;
 import com.example.jingbin.viewcollect.ui.ExpandableViewActivity;
 import com.example.jingbin.viewcollect.ui.FlipperActivity;
@@ -23,6 +25,7 @@ import com.example.jingbin.viewcollect.ui.LabelEditActivity;
 import com.example.jingbin.viewcollect.ui.NumberAddViewActivity;
 import com.example.jingbin.viewcollect.ui.ProductDetailActivity;
 import com.example.jingbin.viewcollect.ui.WordWrapViewActivity;
+import com.example.jingbin.viewcollect.utils.ToastUtils;
 import com.kaws.lib.exoplayer.PlayerActivity;
 
 public class MainActivity extends AppCompatActivity
@@ -42,8 +45,15 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("Action", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Toast.makeText(v.getContext(), "点击Snackbar", Toast.LENGTH_LONG).show();
+                            }
+                        }).show();
             }
         });
 
@@ -70,6 +80,7 @@ public class MainActivity extends AppCompatActivity
         binding.include.inContentMain.tvLab.setOnClickListener(this);
         binding.include.inContentMain.tvFlipper.setOnClickListener(this);
         binding.include.inContentMain.tvExpandText.setOnClickListener(this);
+        binding.include.inContentMain.tvBehavior.setOnClickListener(this);
     }
 
     @Override
@@ -102,6 +113,9 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.tv_expand_text: // 文字展开收起(列表适用)
                 ExpandTextActivity.start(MainActivity.this);
+                break;
+            case R.id.tv_behavior:// 自定义behavior
+                CustomBehaviorActivity.start(MainActivity.this);
                 break;
             default:
                 break;
