@@ -11,4 +11,12 @@
 
     <color name="theme">#22c283</color>
     <color name="check_text_color">#333333</color>
+
+    <!--按钮-->
+    <color name="col_f3f3f3">#f3f3f3</color>
+    <color name="col_ff719e">#ff719e</color>
+    <color name="col_ffae9b">#ffae9b</color>
+    <color name="col_55a8ff">#55a8ff</color>
+    <color name="col_8998ff">#8998ff</color>
+    <color name="col_aaabb3">#aaabb3</color>
 </resources>

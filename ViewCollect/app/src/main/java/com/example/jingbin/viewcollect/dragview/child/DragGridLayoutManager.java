@@ -3,11 +3,9 @@ package com.example.jingbin.viewcollect.dragview.child;
 import android.content.Context;
 import android.graphics.Rect;
 import android.support.v4.view.ViewCompat;
-import android.support.v7.recyclerview.BuildConfig;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 import java.lang.reflect.Field;
@@ -174,9 +172,9 @@ public class DragGridLayoutManager extends GridLayoutManager {
         try {
             child = recycler.getViewForPosition(position);
         } catch (IndexOutOfBoundsException e) {
-            if (BuildConfig.DEBUG) {
-                Log.w("LinearLayoutManager", "LinearLayoutManager doesn't work well with animations. Consider switching them off", e);
-            }
+//            if (BuildConfig.DEBUG) {
+//                Log.w("LinearLayoutManager", "LinearLayoutManager doesn't work well with animations. Consider switching them off", e);
+//            }
             return;
         }
 
@@ -228,16 +226,16 @@ public class DragGridLayoutManager extends GridLayoutManager {
 
     private static void onMakeInsertDirtyFailed() {
         canMakeInsetsDirty = false;
-        if (BuildConfig.DEBUG) {
-            Log.w("LinearLayoutManager", "Can't make LayoutParams insets dirty, decorations measurements might be incorrect");
-        }
+//        if (BuildConfig.DEBUG) {
+//            Log.w("LinearLayoutManager", "Can't make LayoutParams insets dirty, decorations measurements might be incorrect");
+//        }
     }
 
     private void logMeasureWarning(int child) {
-        if (BuildConfig.DEBUG) {
-            Log.w("LinearLayoutManager", "Can't measure child #" + child + ", previously used dimensions will be reused." +
-                    "To remove this message either use #setChildSize() method or don't run RecyclerView animations");
-        }
+//        if (BuildConfig.DEBUG) {
+//            Log.w("LinearLayoutManager", "Can't measure child #" + child + ", previously used dimensions will be reused." +
+//                    "To remove this message either use #setChildSize() method or don't run RecyclerView animations");
+//        }
     }
 
     @Override

@@ -5,6 +5,8 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.jingbin.viewcollect.App;
+
 /**
  * Created by Administrator on 2015/10/19.
  */
@@ -18,6 +20,10 @@ public class DensityUtil {
         return (int) (dpValue * scale + 0.5f);
     }
 
+    public static int dip2px(float dpValue) {
+        return dip2px(App.getInstance(), dpValue);
+    }
+
     /**
      * 根据手机的分辨率从 px(像素) 的单位 转成为 dp
      */
@@ -26,9 +32,23 @@ public class DensityUtil {
         return (int) (pxValue / scale + 0.5f);
     }
 
-    public static float sp2px(Context context, float spValue) {
-        return TypedValue.applyDimension(
+    public static int px2dip(float pxValue) {
+        return px2dip(App.getInstance(), pxValue);
+    }
+
+    public static int sp2px(Context context, float spValue) {
+        return (int) TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_SP, spValue, context.getResources().getDisplayMetrics());
+    }
+
+    /**
+     * 将sp值转换为px值，保证文字大小不变
+     *
+     * @param spValue fontScale （DisplayMetrics类中属性scaledDensity）
+     */
+    public static int sp2px(float spValue) {
+        final float fontScale = App.getInstance().getResources().getDisplayMetrics().scaledDensity;
+        return (int) (spValue * fontScale + 0.5f);
     }
 
     /**
