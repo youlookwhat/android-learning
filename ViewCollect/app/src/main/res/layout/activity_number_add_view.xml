@@ -6,11 +6,11 @@
         android:id="@+id/activity_number_add_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
         android:gravity="center"
         android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
         tools:context="com.example.jingbin.viewcollect.ui.NumberAddViewActivity">
 
         <com.example.jingbin.viewcollect.view.NumberAddView
@@ -20,5 +20,10 @@
             app:addOrSub_width="30dp"
             app:number_width="40dp" />
 
+        <com.example.jingbin.viewcollect.view.GenderSwitchView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/na_cart_goods_num" />
     </RelativeLayout>
 </layout>
